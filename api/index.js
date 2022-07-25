@@ -1,3 +1,4 @@
 export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe', req })
+  const headers = [...req.headers]
+  res.status(200).json({ name: 'John Doe', headers })
 }
