@@ -1,4 +1,4 @@
-module.exports = (req, res) => {
-  console.log(req)
-  res.json({hello: 'world'})
-})
+export default function handler(req, res) {
+  res.setHeader('Cache-Control', 's-maxage=86400');
+  res.status(200).json({ name: 'John Doe' });
+}
