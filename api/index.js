@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-  const { id } = req.query;
-  res.send('Removing ID ' + id);
+  console.log(req)
+  res.json({hello: 'world'})
 })
